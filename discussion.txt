@@ -1,0 +1,57 @@
+Recursion
+
+In your own words, what is recursion?
+Why is it necessary to have a base case?
+
+Recursion is a computer science technique in writing a function that calls itself. It is helpful to use recursion when there are parts of a problem that needs to be evaluated from a smaller set of data. Loops can be used, however, there are times recursion makes for simpler and easier to understand code.
+
+It's important to have a base case so that the function doesn't call itself indefinitely. The base case tells the recursive function when to stop and therefore an answer can be achieved.
+
+
+Graphs
+
+
+What is a graph? How is a graph different from a tree?
+
+Graphs are like trees except they 1) do not have a clear heirachy and 2) can contain loops. The nodes of a graph are the basic unit and the connection between two nodes are called an edge or an arc.
+
+Give an example of something that would be good to model with a graph.
+Social Networks, food chains, or flow charts are great examples where graphs are good data structures to use.
+
+
+Performance of Different Data Structures
+
+
+Data Structure          Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)     O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List             O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Doubly-Linked List      O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)        X       X       O(1)    X       O(n)    X
+Queue (as LL or DLL)    X       X       O(1)    X       O(1)    X
+Stack (Array, LL,DLL)   X       X       O(1)    X       X       O(1)    
+Deque (as DLL)          X       X       O(1)    O(1)    O(1)    O(1)
+
+
+Data Structure          Get       Add      Delete   Iterate Memory
+Dictionary (Hash Map)   O(1)      O(1)     O(1)     O(n)    a lot
+Set (Hash Map)          O(1)      O(1)     O(1)     O(n)    a lot          
+Binary Search Tree      O(log n)  O(log n) O(log n) O(n)    medium
+Tree                    O(n)      O(1)     O(1)     O(n)    medium
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+Bubble sort is a comparison-based sorting algorithm where numbers that are next to each other are compared. If the number to the left is larger than the one to the right, then the numbers are swapped. After the first iteration, the highest number is on the right hand side of the list. Then as bubble sort goes through each iteration of numbers, the next highest is them found and placed to the left of the highest until all the numbers are sorted. It is a pretty slow algorithm and has a runtime of O(n^2).
+
+
+Describe in words how the Merge Sort algorithm works.
+
+Merge sort is a sorting algorithm that merges two sorted lists together. It is a recursive algorithm that breaks down a list in half then recombines the list once it has been sorted by comparing the first numbers in each list and placing the number that is the next highest in a new list where the new list is then sorted. The base case is when one of the lists has only one item then it merges with another list that is also already sorted forming a new sorted list of numbers. In the end the final list of numbers is sorted. Currently Merge Sort has a runtime of O(n log n).
+
+Describe in words how the Quick Sort algorithm works.
+
+Quicksort is an algorithm where a pivot number is chosen and numbers are then added to the left of the pivot if they are lower and also added to the right of the pivot number if they are larger. There might be cases where the pivot is chosen incorrectly and therefore the runtime ends up being O(n^2). However, depending on how the data is structured, the runtime can be O(n log n). 
+
+
+
+
